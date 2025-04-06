@@ -1,11 +1,13 @@
 from pydantic import BaseModel
 from typing import List, Dict
+from pydantic import Field
+from typing import Literal
 
 class StudentProfile(BaseModel):
     name: str
-    age: int
-    class_level: str
-    syllabus: str
+    age: int = Field(gt=12, lt=18)  # Age should be between 5 and 18
+    class_level: int = Field(gt=7, lt=12)  # Class level should be between 1 and 12
+    syllabus: Literal['CBSE', 'ICSE', 'IB', 'IGCSE']
     interests: List[str]
     personality: List[str]
     hobbies: List[str]

@@ -1,6 +1,6 @@
 from langchain.prompts import PromptTemplate
 from langchain.output_parsers import PydanticOutputParser
-from .schema import StudentProfile
+from schema import StudentProfile
 
 parser = PydanticOutputParser(pydantic_object=StudentProfile)
 

@@ -1,5 +1,5 @@
-from .model_loader import load_llm
-from .prompt_builder import prompt, parser
+from model_loader import load_llm
+from prompt_builder import prompt, parser
 
 llm = load_llm()
 chain = prompt | llm | parser

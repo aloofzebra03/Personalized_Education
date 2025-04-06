@@ -1,9 +1,10 @@
-from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
-from langchain_community.llms import HuggingFacePipeline
-from .config import MODEL_NAME
+from langchain_community.llms import HuggingFaceEndpoint
+from config import HF_API_TOKEN, MODEL_NAME
 
 def load_llm():
-    tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
-    model = AutoModelForCausalLM.from_pretrained(MODEL_NAME, device_map="auto", torch_dtype="auto")
-    pipe = pipeline("text-generation", model=model, tokenizer=tokenizer, max_new_tokens=512)
-    return HuggingFacePipeline(pipeline=pipe)
+    return HuggingFaceEndpoint(
+        repo_id=MODEL_NAME,
+        huggingfacehub_api_token=HF_API_TOKEN,
+        temperature=0.7,
+        max_length=512
+    )
