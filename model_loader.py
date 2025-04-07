@@ -1,8 +1,5 @@
-from langchain_community.llms import HuggingFaceEndpoint
-from config import HF_API_TOKEN, MODEL_NAME
-
 from langchain_huggingface import HuggingFaceEndpoint
-from config import MODEL_NAME, HF_API_TOKEN
+from config import HF_API_TOKEN, MODEL_NAME
 
 def load_llm():
     return HuggingFaceEndpoint(

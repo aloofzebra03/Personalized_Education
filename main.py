@@ -6,7 +6,7 @@ import random
 def main():
     profiles = []
     for _ in range(NUM_PROFILES):
-        profile = generate_profile(random.randint(6, 12))
+        profile = generate_profile()
         profiles.append(profile.dict())
     df = pd.DataFrame(profiles)
     df.to_csv(OUTPUT_CSV, index=False)
