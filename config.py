@@ -4,11 +4,17 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-NUM_PROFILES = 2
-MODEL_NAME = "mistralai/Mistral-7B-Instruct-v0.1"
+NUM_PROFILES = 50
+# MODEL_NAME = "mistralai/Mistral-7B-Instruct-v0.1"
+# MODEL_NAME = 'TinyLlama/TinyLlama-1.1B-Chat-v1.0'
+# MODEL_NAME = 'google/flan-t5-base'
+# MODEL_NAME = 'google/gemma-2-2b-it'
+# MODEL_NAME = 'HuggingFaceH4/zephyr-7b-beta'
+MODEL_NAME = 'gemini-1.5-flash'
 
 OUTPUT_CSV = Path("langchain_structured_profiles.csv")
 HF_API_TOKEN = os.getenv("HF_API_TOKEN")
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
 INSTRUCTION_TEMPLATE = '''
 You are a school counselor. Generate a synthetic student profile for class {class_level}.
