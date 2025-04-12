@@ -20,7 +20,6 @@ def sanitize_json_string(text: str) -> str:
 
 
 def extract_json_blocks(text: str) -> list[str]:
-    # Match full JSON blocks that start and end with curly braces
     json_pattern = re.compile(r'\{.*?\}(?=(\n|$))', re.DOTALL)
     blocks = json_pattern.findall(text)
     
@@ -70,7 +69,7 @@ def generate_profiles(memory_profiles: list = None):
             try:
                 parsed_profiles.append(parser.parse(json.dumps(entry)))
             except Exception as sub_e:
-                print("❌ Error parsing one profile:", sub_e)
+                print("Error parsing one profile:", sub_e)
         return parsed_profiles
 
     except Exception as e:

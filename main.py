@@ -3,7 +3,6 @@ from generator import generate_profiles
 import pandas as pd
 import json
 
-# Persistent memory (optional: load from file if needed)
 memory_profiles = []
 
 def is_duplicate(profile: dict, memory: list) -> bool:
