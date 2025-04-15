@@ -1,0 +1,50 @@
+What is the student's age?
+Which grade is the student in?
+What syllabus does the student follow?
+What are some of the student’s interests?
+Can you describe the student's personality in a few words?
+What are the student's hobbies?
+What is the student's preferred learning style?
+How does the student typically learn best?
+What is the student's usual study routine?
+How long does the student typically study each day?
+What were the student's average marks last year?
+What were the student's marks in Math last year?
+What were the student's marks in English in the last final exams?
+Has the student's academic progress improved?
+What was the student's average in the last internal exams?
+In which subjects did the student score the highest last year?
+In which subject did the student score the lowest in the last internals?
+What are the student's preferred subjects?
+What subject does the student struggle with?
+What are some of the student's academic strengths?
+How does the student prefer to receive feedback?
+How does the student react to public correction?
+What motivates the student?
+How does the student behave in group settings?
+Does the student have many close friends?
+How would you describe the student's social skills?
+What is one piece of feedback a teacher has given the student?
+What is something the student has expressed about their learning experience?
+What does the student wish for in science class?
+What was the student's achievement in the Science Fair?
+Is the student involved in any sports?
+What kind of certification does the student have in Robotics?
+What digital learning apps does the student use?
+Is the student an engaged online learner?
+What kind of tech projects does the student build?
+How would you rate the student's tech savviness?
+Describe the student's home environment in terms of support for studies.
+Does the student have internet access at home?
+What languages does the student know?
+Tell me a story about the student fixing something at home.
+What happened when the student helped a classmate in robotics?
+Describe the "Digital Detective" incident involving the student.
+What does the "Fan Fixer" story tell us about the student?
+How did the student help a classmate in robotics without taking over?
+What does the Arduino alarm story reveal about the student's skills?
+Based on the student's interests, what kind of extracurricular activities might they enjoy in the future?
+Considering the student's learning style, what teaching methods might be most effective for them?
+How might the student approach a challenging problem in Math, given their strengths?
+What kind of projects might the student be interested in creating using their tech skills?
+How might the student's introverted nature influence their participation in class discussions?
