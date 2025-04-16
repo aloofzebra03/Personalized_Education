@@ -26,7 +26,7 @@ def main():
     all_qas = []
 
     # Generate answers for all students in batches of 10 questions
-    for index, row in tqdm.tqdm(df.iloc[0:2].iterrows(), total=len(df.iloc[0:2])):
+    for _, row in tqdm.tqdm(df.iloc[0:2].iterrows(), total=len(df.iloc[0:2])):
         qas = generate_qas(row.to_dict(), question_batches, prompt, model, parser)
         all_qas.extend(qas)
 
