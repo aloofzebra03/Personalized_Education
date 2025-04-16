@@ -1,6 +1,6 @@
 import json
 from typing import List
-from langchain.output_parsers import OutputParserException
+# from langchain.output_parsers import OutputParserException
 from langchain.prompts.base import BasePromptTemplate
 
 def personalize_question(question: str, student_id: int) -> str:
@@ -19,27 +19,16 @@ def generate_qas(profile_row: dict, question_batches: List[List[str]], prompt: B
         personalized_batch = [personalize_question(q, student_id) for q in batch]
         question_block = "\n".join(f"{i+1}. {q}" for i, q in enumerate(personalized_batch))
 
-        try:
-            # Modern pipeline execution using LangChain Expression Language
-            output = prompt | model | parser
-            parsed_result = output.invoke({
-                "profile": profile_str,
-                "questions": question_block
+        output = prompt | model | parser
+        parsed_result = output.invoke({
+            "profile": profile_str,
+            "questions": question_block
+        })
+
+        for qa in parsed_result.root:
+            qa_pairs.append({
+                "student_id": student_id,
+                "question": qa.question,
+                "answer": qa.answer
             })
-
-            for qa in parsed_result.__root__:
-                qa_pairs.append({
-                    "student_id": student_id,
-                    "question": qa.question,
-                    "answer": qa.answer
-                })
-
-        except OutputParserException:
-            for q in personalized_batch:
-                qa_pairs.append({
-                    "student_id": student_id,
-                    "question": q,
-                    "answer": "ERROR"
-                })
-
     return qa_pairs

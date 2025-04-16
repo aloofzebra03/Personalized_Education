@@ -5,6 +5,7 @@ from config import *
 from models.model_loader import load_model
 from prompts.prompt_builder import build_prompt_and_parser
 from engine.qa_generator import generate_qas, batch_questions
+import os
 
 def load_questions(path: str) -> list[str]:
     with open(path, "r", encoding="utf-8") as f:
@@ -22,13 +23,15 @@ def main():
     model = load_model()
     prompt, parser = build_prompt_and_parser()
 
-    chain = prompt|model|parser
     all_qas = []
 
     # Generate answers for all students in batches of 10 questions
-    for index, row in tqdm(df.iloc[0:1].iterrows(), total=len(df)):
-        qas = generate_qas(index,row.to_dict(), question_batches, chain)
+    for index, row in tqdm.tqdm(df.iloc[0:2].iterrows(), total=len(df.iloc[0:2])):
+        qas = generate_qas(row.to_dict(), question_batches, prompt, model, parser)
         all_qas.extend(qas)
+
+    os.makedirs(os.path.dirname(OUTPUT_JSONL_PATH), exist_ok=True)
+    os.makedirs(os.path.dirname(OUTPUT_CSV_PATH), exist_ok=True)
 
     # Save as JSONL
     with open(OUTPUT_JSONL_PATH, "w", encoding="utf-8") as f:
