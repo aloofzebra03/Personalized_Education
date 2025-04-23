@@ -1,3 +1,4 @@
+What is the student's name?
 What is the student's age?
 Which grade is the student in?
 What syllabus does the student follow?
@@ -29,7 +30,6 @@ What is something the student has expressed about their learning experience?
 What does the student wish for in science class?
 What was the student's achievement in the Science Fair?
 Is the student involved in any sports?
-What kind of certification does the student have in Robotics?
 What digital learning apps does the student use?
 Is the student an engaged online learner?
 What kind of tech projects does the student build?
@@ -37,14 +37,7 @@ How would you rate the student's tech savviness?
 Describe the student's home environment in terms of support for studies.
 Does the student have internet access at home?
 What languages does the student know?
-Tell me a story about the student fixing something at home.
-What happened when the student helped a classmate in robotics?
-Describe the "Digital Detective" incident involving the student.
-What does the "Fan Fixer" story tell us about the student?
-How did the student help a classmate in robotics without taking over?
-What does the Arduino alarm story reveal about the student's skills?
 Based on the student's interests, what kind of extracurricular activities might they enjoy in the future?
 Considering the student's learning style, what teaching methods might be most effective for them?
 How might the student approach a challenging problem in Math, given their strengths?
 What kind of projects might the student be interested in creating using their tech skills?
-How might the student's introverted nature influence their participation in class discussions?
