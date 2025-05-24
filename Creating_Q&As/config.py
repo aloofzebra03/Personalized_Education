@@ -14,8 +14,8 @@ MODEL_NAME = 'gemini-1.5-flash'
 HF_API_TOKEN = os.getenv("HF_API_TOKEN")
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
-PROFILE_CSV_PATH = r"Personalized_Education\Creating_Q&As\data\student_profiles.csv"
-QUESTION_LIST_PATH = r"Personalized_Education\Creating_Q&As\data\questions.txt"
+PROFILE_CSV_PATH = r"Personalized_Education/Creating_Q&As/data/student_profiles.csv"
+QUESTION_LIST_PATH = r"Personalized_Education/Creating_Q&As/data/questions.txt"
 
 OUTPUT_JSONL_PATH = r"Personalized_Education\Creating_Q&As\output\generated_qas.jsonl"
 OUTPUT_CSV_PATH = r"Personalized_Education\Creating_Q&As\output\generated_qas.csv"
