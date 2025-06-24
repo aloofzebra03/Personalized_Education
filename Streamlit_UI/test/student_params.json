@@ -1,0 +1,53 @@
+{
+  "conceptual_clarity_level": 3,
+  "attention_span_category": 2,
+  "retention_strength": 75.5,
+  "problem_solving_speed_sec": 120,
+  "error_pattern": "conceptual",
+  "growth_slope": 0.2,
+  "response_to_feedback": 4,
+  "revisions_per_week": 2,
+  "days_between_revisions": 3,
+  "method_of_revision": [
+    "active_recall",
+    "spaced_repetition"
+  ],
+  "question_asking_nature": 2,
+  "self_assessment_accuracy": -5.0,
+  "exploration_tendency": 3,
+  "teacher_relationship_quality": 5,
+  "peer_learning_behavior": 2,
+  "communication_clarity": 4,
+  "discussion_engagement": 3,
+  "test_anxiety_level": 2,
+  "resilience_after_failure": 4,
+  "motivation_intrinsic_vs_extrinsic": 0.7,
+  "achievement_orientation": 2,
+  "emotional_self_awareness": 4,
+  "device_access_type": 2,
+  "preferred_edtech_apps": [
+    "KhanAcademy",
+    "Quizlet"
+  ],
+  "digital_distraction_level": 3,
+  "input_method_preference": "typing",
+  "highest_academic_level": "high_school",
+  "study_space_quality": 4,
+  "academic_pressure_at_home": 3,
+  "family_responsibilities_hrs": 1,
+  "support_system_strength": 3,
+  "content_type_preference": [
+    "text",
+    "video"
+  ],
+  "knowledge_graph_nodes_covered": [],
+  "ongoing_concept": "Sundial",
+  "metacognitive_skill_level": 3,
+  "last_section": [
+    "Real-Life Application",
+    "Explanation (with analogies)",
+    "Details (facts, sub-concepts)",
+    "Logical Flow",
+    "Concept Definition"
+  ]
+}

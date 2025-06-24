@@ -1,0 +1,11 @@
+section_name,conceptual_clarity_level_min,conceptual_clarity_level_max,retention_strength_min,retention_strength_max,family_responsibilities_hrs_min,family_responsibilities_hrs_max,metacognitive_skill_level_min,metacognitive_skill_level_max,error_pattern,input_method_preference,content_type_preference
+Concept Definition,1,1,0.0,30.0,0,24,1,5,conceptual,typing,"['text', 'image']"
+Explanation (with analogies),1,2,30.0,60.0,0,8,1,3,conceptual,voice,"['video', 'text']"
+"Details (facts, sub-concepts)",2,3,40.0,70.0,8,16,2,4,careless,writing,"['text', 'image', 'video']"
+Intuition,3,4,60.0,80.0,0,8,3,5,calculation,typing,"['animation', 'simulation']"
+Logical Flow,4,5,70.0,90.0,8,16,4,5,conceptual,voice,"['text', 'diagram']"
+Working,2,4,50.0,80.0,16,24,1,3,calculation,writing,"['interactive_problem', 'video']"
+Critical Thinking,3,5,80.0,100.0,16,24,3,5,careless,typing,"['case_study', 'simulation']"
+MCQs,1,5,0.0,100.0,0,24,1,5,careless,voice,['quiz']
+Real-Life Application,3,5,60.0,100.0,0,8,3,5,conceptual,writing,"['case_study', 'video']"
+What-if Scenarios,4,5,80.0,100.0,8,24,4,5,calculation,typing,"['simulation', 'interactive_problem']"

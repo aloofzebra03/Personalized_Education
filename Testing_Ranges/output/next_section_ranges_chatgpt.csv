@@ -1,0 +1,11 @@
+next_section,conceptual_clarity_level_min,conceptual_clarity_level_max,retention_strength_min,retention_strength_max,family_responsibilities_hrs_min,family_responsibilities_hrs_max,metacognitive_skill_level_min,metacognitive_skill_level_max,error_pattern,input_method_preference,content_type_preference
+Concept Definition,1,1,0.0,50.0,0,24,1,5,any,any,any
+Explanation (with analogies),2,2,0.0,50.0,0,24,1,5,any,any,any
+"Details (facts, sub-concepts)",3,3,0.0,50.0,0,24,1,5,any,any,any
+Intuition,4,4,0.0,50.0,0,24,1,5,any,any,any
+Logical Flow,5,5,0.0,50.0,0,24,1,5,any,any,any
+Working,1,1,50.1,100.0,0,24,1,5,any,any,any
+Critical Thinking,2,2,50.1,100.0,0,24,1,5,any,any,any
+MCQs,3,3,50.1,100.0,0,24,1,5,any,any,any
+Real-Life Application,4,4,50.1,100.0,0,24,1,5,any,any,any
+What-if Scenarios,5,5,50.1,100.0,0,24,1,5,any,any,any
