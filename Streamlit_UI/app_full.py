@@ -5,8 +5,8 @@ import streamlit as st
 
 # ──────────────────────────────────────────────────────────────────────────────
 # Allow absolute imports of your packages
-PROJECT_ROOT = r"C:/Users/aryan/Desktop/Personalized_Education/Personalized_Education"
-sys.path.insert(0, PROJECT_ROOT)
+# PROJECT_ROOT = r"C:/Users/aryan/Desktop/Personalized_Education/Personalized_Education"
+# sys.path.insert(0, PROJECT_ROOT)
 
 from Creating_Section_Params.schema import NextSectionChoice, ALLOWED_KG_NODES
 from Creating_Section_Text.pipeline   import ingest_and_build_store, run_one
@@ -57,7 +57,7 @@ def generate_next_section(params: dict) -> NextSectionChoice:
 # ──────────────────────────────────────────────────────────────────────────────
 
 st.set_page_config(page_title="Adaptive Tutor", layout="centered")
-st.title("🎓 Personalized Next-Section Tutor")
+st.title(" Personalized Next-Section Tutor")
 
 init_vector_store()
 
