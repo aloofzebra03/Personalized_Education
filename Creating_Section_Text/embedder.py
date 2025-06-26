@@ -13,7 +13,7 @@ def get_embedder():
     print("Building Gemini embedder...")
     embeddings = GoogleGenerativeAIEmbeddings(
         model="models/embedding-001",  # <- NO "models/" prefix
-        transport="grpc",                    # <- HTTP/1.1 path only
+        transport="http",                    # <- HTTP/1.1 path only
         google_api_key=os['GOOGLE_API_KEY'] # <- explicit auth
     )
     # sanity check
