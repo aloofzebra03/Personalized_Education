@@ -2,6 +2,7 @@
 
 import os
 from pathlib import Path
+import pysqlite3
 
 from langchain_chroma import Chroma
 from Creating_Section_Text.embedder       import get_embedder
@@ -27,7 +28,7 @@ def build_vectorstore():
     vector_store = Chroma.from_documents(
         documents        = docs,
         embedding         = embedder,
-        # persist_directory = str(DB_DIR),
+        persist_directory = str(DB_DIR),
         collection_name   = "chapter8"
     )
     print(f"Vector store built at {DB_FILE!r}.")
@@ -42,7 +43,7 @@ def load_vectorstore():
 
     embedder = get_embedder()
     vs = Chroma(
-        # persist_directory   = str(DB_DIR),
+        persist_directory   = str(DB_DIR),
         embedding_function  = embedder,
         collection_name     = "chapter8"
     )
