@@ -55,7 +55,7 @@ The field ongoing_concept specifies the concept that the student is currently le
 
 Analyze the student's current parameters from the student_json in context of the max and min possible values from the schema.
 Assign each section parameter an integer from 1–5 based on the current student parameters with the goal of ensuring the student understands the ongoing concept thoroughly.
-Then, choose the best section from the available sections that would be most beneficial for the student to learn next, considering their current understanding and the ongoing concept.
+Then, choose the best section from the available sections that would be most beneficial for the student to learn next, considering their current understanding and the ongoing concept.Ensure that the section you choose has not been covered by the student yet.You can verify this from the last_section list.
 Note: The sections that you need to choose from are the ones listed in the sections. You must choose one of these sections as the next section for the student. DO NOT confuse these with the student parameters. They are completely different. The knowledge_graph_nodes_covered in the student parameters schema are the concepts that the student has learned till now. Your goal is to suggest the next section that would be best for the student given their current parameters, including the concepts covered and the ongoing concept.
 
 {format_instructions}
