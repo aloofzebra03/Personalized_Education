@@ -2,7 +2,6 @@
 
 import os
 from pathlib import Path
-import pysqlite3
 
 from langchain_chroma import Chroma
 from Creating_Section_Text.embedder       import get_embedder

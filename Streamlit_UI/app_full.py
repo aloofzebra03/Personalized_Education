@@ -3,6 +3,9 @@ import sys, os, json, ast
 import pandas as pd
 import streamlit as st
 
+import pysqlite3
+sys.modules["sqlite3"] = pysqlite3
+
 # ──────────────────────────────────────────────────────────────────────────────
 # Allow absolute imports of your packages
 PROJECT_ROOT = r"/mount/src/personalized_education/"
