@@ -10,7 +10,7 @@ NUM_PROFILES = 50
 # MODEL_NAME = 'google/flan-t5-base'
 # MODEL_NAME = 'google/gemma-2-2b-it'
 # MODEL_NAME = 'HuggingFaceH4/zephyr-7b-beta'
-MODEL_NAME = 'gemini-2.0-flash'
+MODEL_NAME = 'gemini-1.5-flash'
 
 OUTPUT_CSV = Path("Creating_Student_Params/output/langchain_student_params_50_streamlit_testing.csv")
 HF_API_TOKEN = os.getenv("HF_API_TOKEN")
