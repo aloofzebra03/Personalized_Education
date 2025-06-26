@@ -8,7 +8,7 @@ import streamlit as st
 PROJECT_ROOT = r"Personalized_Education"
 sys.path.insert(0, PROJECT_ROOT)
 
-from Creating_Section_Params.schema import NextSectionChoice, ALLOWED_KG_NODES
+from sdf/Creating_Section_Params.schema import NextSectionChoice, ALLOWED_KG_NODES
 from Creating_Section_Text.pipeline   import ingest_and_build_store, run_one
 # ──────────────────────────────────────────────────────────────────────────────
 
