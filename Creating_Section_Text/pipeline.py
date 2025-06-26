@@ -6,6 +6,7 @@ from Creating_Section_Text.prompt_builder import build_prompt
 from Creating_Section_Text.schema         import NextSectionChoice
 from Creating_Section_Text.vectorstore import build_vectorstore
 from Filtering_GT.filter_utils            import filter_relevant_section
+import time
 
 def run_one(ongoing_concept: str, section_params: NextSectionChoice):
     docs   = retrieve_docs(ongoing_concept, section_params)
@@ -15,6 +16,7 @@ def run_one(ongoing_concept: str, section_params: NextSectionChoice):
         combined_text.append(f"# Page: {d.metadata['page_label']}\n{d.page_content}")
     full_doc = "\n---\n".join(combined_text)
     filtered_text = filter_relevant_section(ongoing_concept, section_params.section_name, full_doc)
+    time.sleep(1)  # Give a moment for the spinner to show
     print(filtered_text)
     prompt = build_prompt(ongoing_concept, section_params, filtered_text)
     llm    = get_llm()
