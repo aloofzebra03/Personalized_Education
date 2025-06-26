@@ -7,7 +7,7 @@ load_dotenv()
 MODEL_NAME     = "gemini-2.1-flash"
 import streamlit as st
 
-GOOGLE_API_KEY = "323" + st.secrets.get("GOOGLE_API_KEY")
+GOOGLE_API_KEY = st.secrets.get("GOOGLE_API_KEY")
 # GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
 STUDENT_PARAMS_CSV = "Creating_Section_Params/data/langchain_student_params_1500_reduced.csv"
