@@ -1,6 +1,9 @@
 from pathlib import Path
 import os
 from dotenv import load_dotenv
+import streamlit as st
+
+GOOGLE_API_KEY = st.secrets.get("GOOGLE_API_KEY")
 
 load_dotenv()
 
@@ -14,4 +17,4 @@ MODEL_NAME = 'gemini-2.0-flash'
 
 OUTPUT_CSV = Path("Creating_Student_Params/output/langchain_student_params_50_streamlit_testing.csv")
 HF_API_TOKEN = os.getenv("HF_API_TOKEN")
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+# GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")

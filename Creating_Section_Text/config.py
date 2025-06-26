@@ -2,10 +2,14 @@
 import os
 from dotenv import load_dotenv
 
+import streamlit as st
+
+GOOGLE_API_KEY = st.secrets.get("GOOGLE_API_KEY")
+
 load_dotenv()
 
 MODEL_NAME     = "gemini-2.0-flash"
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+# GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
 HF_API_KEY          = os.getenv("HF_API_KEY", "")
 # HF_EMBEDDING_MODEL  = "sentence-transformers/all-mpnet-base-v2"
