@@ -8,7 +8,7 @@ GOOGLE_API_KEY = st.secrets.get("GOOGLE_API_KEY")
 
 load_dotenv()
 
-MODEL_NAME     = "gemini-2.0-flash"
+MODEL_NAME     = "gemini-1.5-flash"
 # GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
 HF_API_KEY          = os.getenv("HF_API_KEY", "")
