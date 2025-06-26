@@ -1,246 +1,246 @@
-Brotli>= 1.1.0
-Deprecated>= 1.2.18
-GitPython>= 3.1.44
-Jinja2>= 3.1.5
-MarkupSafe>= 3.0.2
-PyJWT>= 2.10.1
-PyPika>= 0.48.9
-PySocks>= 1.7.1
-PyYAML>= 6.0.2
-Pygments>= 2.19.1
-SQLAlchemy>= 2.0.38
-aiohappyeyeballs>= 2.4.6
-aiohttp>= 3.11.12
-aiosignal>= 1.3.2
-altair>= 5.5.0
-annotated-types>= 0.7.0
-anthropic>= 0.46.0
-anyio>= 4.8.0
-asgiref>= 3.8.1
-asttokens>= 3.0.0
-async-timeout>= 4.0.3
-attrs>= 25.1.0
-backcall>= 0.2.0
-backoff>= 2.2.1
-bcrypt>= 4.3.0
-beautifulsoup4>= 4.13.4
-bleach>= 6.2.0
-blinker>= 1.9.0
-build>= 1.2.2.post1
-cachetools>= 5.5.1
-certifi>= 2025.1.31
-cffi>= 1.17.1
-charset-normalizer>= 3.4.1
-chromadb>= 1.0.12
-click>= 8.2.1
-colorama>= 0.4.6
-coloredlogs>= 15.0.1
-comm>= 0.2.2
-cryptography>= 45.0.4
-dataclasses-json>= 0.6.7
-datasets>= 2.2.1
-debugpy>= 1.8.14
-decorator>= 5.2.1
-defusedxml>= 0.7.1
-dill>= 0.3.9
-distro>= 1.9.0
-dnspython>= 2.7.0
-docopt>= 0.6.2
-duckduckgo_search>= 8.0.4
-durationpy>= 0.10
-email_validator>= 2.2.0
-exceptiongroup>= 1.2.2
-executing>= 2.1.0
-fastapi-cli>= 0.0.7
-fastapi>= 0.115.9
-fastjsonschema>= 2.21.1
-filelock>= 3.17.0
-filetype>= 1.2.0
-flatbuffers>= 25.2.10
-frozenlist>= 1.6.0
-fsspec>= 2025.2.0
-future>= 1.0.0
-gitdb>= 4.0.12
-google-ai-generativelanguage>= 0.6.15
-google-api-core>= 2.24.2
-google-api-python-client>= 2.161.0
-google-auth-httplib2>= 0.2.0
-google-auth>= 2.38.0
-google-genai>= 1.16.1
-google-generativeai>= 0.8.5
-googleapis-common-protos>= 1.70.0
-grandalf>= 0.7
-greenlet>= 3.2.3
-grpcio-status>= 1.60.1
-grpcio>= 1.60.1
-h11>= 0.14.0
-h2>= 4.2.0
-hpack>= 4.1.0
-httpcore>= 1.0.7
-httplib2>= 0.22.0
-httptools>= 0.6.4
-httpx-sse>= 0.4.0
-httpx>= 0.28.1
-huggingface-hub>= 0.29.0
-humanfriendly>= 10.0
-hyperframe>= 6.1.0
-idna>= 3.10
-importlib_metadata>= 7.0.2
-importlib_resources>= 6.5.2
-ipykernel>= 6.29.5
-ipython>= 8.12.3
-ipython_pygments_lexers>= 1.1.1
-jedi>= 0.19.2
-jiter>= 0.8.2
-joblib>= 1.4.2
-jsonpatch>= 1.33
-jsonpointer>= 3.0.0
-jsonschema-specifications>= 2025.4.1
-jsonschema>= 4.24.0
-jupyter_client>= 8.6.3
-jupyter_core>= 5.7.2
-jupyterlab_pygments>= 0.3.0
-kubernetes>= 33.1.0
-langchain-anthropic>= 0.3.7
-langchain-chroma>= 0.2.4
-langchain-community>= 0.3.16
-langchain-core>= 0.3.37
-langchain-experimental>= 0.3.4
-langchain-google-genai>= 2.0.10
-langchain-openai>= 0.3.6
-langchain-text-splitters>= 0.3.6
-langchain>= 0.3.17
-langsmith>= 0.2.11
-lxml>= 5.4.0
-markdown-it-py>= 3.0.0
-marshmallow>= 3.26.1
-matplotlib-inline>= 0.1.7
-mdurl>= 0.1.2
-mistune>= 3.1.3
-mmh3>= 5.1.0
-monotonic>= 1.6
-mpmath>= 1.3.0
-multidict>= 6.1.0
-multiprocess>= 0.70.18
-mypy_extensions>= 1.0.0
-narwhals>= 1.44.0
-nbclient>= 0.10.2
-nbconvert>= 7.16.6
-nbformat>= 5.10.4
-nest_asyncio>= 1.6.0
-networkx>= 3.4.2
-numpy>= 1.26.4
-oauthlib>= 3.3.1
-onnxruntime>= 1.20.1
-openai>= 1.63.2
-opentelemetry-api>= 1.27.0
-opentelemetry-exporter-otlp-proto-common>= 1.27.0
-opentelemetry-exporter-otlp-proto-grpc>= 1.27.0
-opentelemetry-instrumentation-asgi>= 0.48b0
-opentelemetry-instrumentation-fastapi>= 0.48b0
-opentelemetry-instrumentation>= 0.48b0
-opentelemetry-proto>= 1.27.0
-opentelemetry-sdk>= 1.27.0
-opentelemetry-semantic-conventions>= 0.48b0
-opentelemetry-util-http>= 0.48b0
-optree>= 0.16.0
-orjson>= 3.10.15
-overrides>= 7.7.0
-packaging>= 24.2
-pandas>= 2.3.0
-pandocfilters>= 1.5.1
-parso>= 0.8.4
-pickleshare>= 0.7.5
-pillow>= 10.4.0
-pipreqs>= 0.5.0
-pkgutil_resolve_name>= 1.3.10
-platformdirs>= 4.3.7
-posthog>= 5.3.0
-primp>= 0.15.0
-prompt_toolkit>= 3.0.51
-propcache>= 0.3.1
-proto-plus>= 1.26.0
-protobuf>= 4.25.1
-psutil>= 7.0.0
-pulsar-client>= 3.4.0
-pure_eval>= 0.2.3
-pyOpenSSL>= 25.1.0
-pyarrow>= 15.0.0
-pyasn1>= 0.6.1
-pyasn1_modules>= 0.4.1
-pybase64>= 1.4.1
-pybind11>= 2.13.6
-pybind11_global>= 2.13.6
-pycparser>= 2.22
-pydantic-settings>= 2.8.1
-pydantic>= 2.10.6
-pydantic_core>= 2.27.2
-pydeck>= 0.9.1
-pyparsing>= 3.2.1
-pypdf>= 5.5.0
-pyproject_hooks>= 1.2.0
-pyreadline3>= 3.5.4
-python-dateutil>= 2.9.0.post0
-python-dotenv>= 1.0.1
-python-multipart>= 0.0.20
-pytz>= 2024.1
-pyu2f>= 0.1.5
-pywin32>= 307
-pyzmq>= 27.0.0
-referencing>= 0.36.2
-regex>= 2024.11.6
-requests-oauthlib>= 2.0.0
-requests-toolbelt>= 1.0.0
-requests>= 2.32.3
-responses>= 0.18.0
-rich-toolkit>= 0.11.3
-rich>= 14.0.0
-rpds-py>= 0.25.1
-rsa>= 4.9.1
-safetensors>= 0.5.2
-scikit-learn>= 1.7.0
-scipy>= 1.15.2
-sentence-transformers>= 3.4.1
-shellingham>= 1.5.4
-six>= 1.17.0
-smmap>= 5.0.2
-sniffio>= 1.3.1
-soupsieve>= 2.7
-stack_data>= 0.6.3
-starlette>= 0.45.3
-streamlit>= 1.46.0
-sympy>= 1.13.1
-tenacity>= 9.0.0
-threadpoolctl>= 3.5.0
-tiktoken>= 0.9.0
-tinycss2>= 1.4.0
-tokenizers>= 0.21.0
-toml>= 0.10.2
-tomli>= 2.2.1
-tornado>= 6.5.1
-tqdm>= 4.67.1
-traitlets>= 5.14.3
-transformers>= 4.49.0
-typer-slim>= 0.16.0
-typer>= 0.16.0
-typing-inspection>= 0.4.0
-typing_extensions>= 4.12.2
-typing_inspect>= 0.9.0
-typing_utils>= 0.1.0
-tzdata>= 2025.2
-uritemplate>= 4.1.1
-urllib3>= 2.3.0
-uvicorn>= 0.34.3
-watchdog>= 6.0.0
-watchfiles>= 1.1.0
-wcwidth>= 0.2.13
-webencodings>= 0.5.1
-websocket-client>= 1.8.0
-websockets>= 15.0.1
-win_inet_pton>= 1.1.0
-wrapt>= 1.17.2
-xxhash>= 3.5.0
-yarg>= 0.1.9
-yarl>= 1.20.1
-zipp>= 3.21.0
-zstandard>= 0.23.0
+Brotli
+Deprecated
+GitPython
+Jinja2
+MarkupSafe
+PyJWT
+PyPika
+PySocks
+PyYAML
+Pygments
+SQLAlchemy
+aiohappyeyeballs
+aiohttp
+aiosignal
+altair
+annotated-types
+anthropic
+anyio
+asgiref
+asttokens
+async-timeout
+attrs
+backcall
+backoff
+bcrypt
+beautifulsoup4
+bleach
+blinker
+build
+cachetools
+certifi
+cffi
+charset-normalizer
+chromadb
+click
+colorama
+coloredlogs
+comm
+cryptography
+dataclasses-json
+datasets
+debugpy
+decorator
+defusedxml
+dill
+distro
+dnspython
+docopt
+duckduckgo_search
+durationpy
+email_validator
+exceptiongroup
+executing
+fastapi
+fastapi-cli
+fastjsonschema
+filelock
+filetype
+flatbuffers
+frozenlist
+fsspec
+future
+gitdb
+google-ai-generativelanguage
+google-api-core
+google-api-python-client
+google-auth
+google-auth-httplib2
+google-genai
+google-generativeai
+googleapis-common-protos
+grandalf
+greenlet
+grpcio
+grpcio-status
+h11
+h2
+hpack
+httpcore
+httplib2
+httptools
+httpx
+httpx-sse
+huggingface-hub
+humanfriendly
+hyperframe
+idna
+importlib_metadata
+importlib_resources
+ipykernel
+ipython
+ipython_pygments_lexers
+jedi
+jiter
+joblib
+jsonpatch
+jsonpointer
+jsonschema
+jsonschema-specifications
+jupyter_client
+jupyter_core
+jupyterlab_pygments
+kubernetes
+langchain
+langchain-anthropic
+langchain-chroma
+langchain-community
+langchain-core
+langchain-experimental
+langchain-google-genai
+langchain-openai
+langchain-text-splitters
+langsmith
+lxml
+markdown-it-py
+marshmallow
+matplotlib-inline
+mdurl
+mistune
+mmh3
+monotonic
+mpmath
+multidict
+multiprocess
+mypy_extensions
+narwhals
+nbclient
+nbconvert
+nbformat
+nest_asyncio
+networkx
+numpy
+oauthlib
+onnxruntime
+openai
+opentelemetry-api
+opentelemetry-exporter-otlp-proto-common
+opentelemetry-exporter-otlp-proto-grpc
+opentelemetry-instrumentation
+opentelemetry-instrumentation-asgi
+opentelemetry-instrumentation-fastapi
+opentelemetry-proto
+opentelemetry-sdk
+opentelemetry-semantic-conventions
+opentelemetry-util-http
+optree
+orjson
+overrides
+packaging
+pandas
+pandocfilters
+parso
+pickleshare
+pillow
+pipreqs
+pkgutil_resolve_name
+platformdirs
+posthog
+primp
+prompt_toolkit
+propcache
+proto-plus
+protobuf
+psutil
+pulsar-client
+pure_eval
+pyOpenSSL
+pyarrow
+pyasn1
+pyasn1_modules
+pybase64
+pybind11
+pybind11_global
+pycparser
+pydantic
+pydantic-settings
+pydantic_core
+pydeck
+pyparsing
+pypdf
+pyproject_hooks
+pyreadline3
+python-dateutil
+python-dotenv
+python-multipart
+pytz
+pyu2f
+pywin32
+pyzmq
+referencing
+regex
+requests
+requests-oauthlib
+requests-toolbelt
+responses
+rich
+rich-toolkit
+rpds-py
+rsa
+safetensors
+scikit-learn
+scipy
+sentence-transformers
+shellingham
+six
+smmap
+sniffio
+soupsieve
+stack_data
+starlette
+streamlit
+sympy
+tenacity
+threadpoolctl
+tiktoken
+tinycss2
+tokenizers
+toml
+tomli
+tornado
+tqdm
+traitlets
+transformers
+typer
+typer-slim
+typing-inspection
+typing_extensions
+typing_inspect
+typing_utils
+tzdata
+uritemplate
+urllib3
+uvicorn
+watchdog
+watchfiles
+wcwidth
+webencodings
+websocket-client
+websockets
+win_inet_pton
+wrapt
+xxhash
+yarg
+yarl
+zipp
+zstandard

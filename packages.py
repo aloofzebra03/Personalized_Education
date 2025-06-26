@@ -14,7 +14,7 @@ for pkg in data:
     if n.lower() in ("pip", "setuptools", "wheel"):
         continue
     # reqs.append(f"{n}=={v}")
-    reqs.append(f"{n}>= {v}")  # use >= to allow minor updates
+    reqs.append(f"{n}")  # use >= to allow minor updates
 
 with open("requirements.txt", "w", encoding="utf-8") as out:
     out.write("\n".join(sorted(reqs)))
