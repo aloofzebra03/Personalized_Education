@@ -2,6 +2,7 @@
 import sys, os, json, ast
 import pandas as pd
 import streamlit as st
+import time
 
 import pysqlite3
 sys.modules["sqlite3"] = pysqlite3
@@ -99,6 +100,7 @@ if "choice" not in st.session_state or st.session_state.choice is None:
     with st.spinner("Determining best next section…"):
         st.session_state.choice = generate_next_section(student_params)
 
+time.sleep(1)  # Give a moment for the spinner to show
 # 5) Auto-fetch the section text if missing
 if "content" not in st.session_state or st.session_state.content is None:
     with st.spinner(f"Generating “{st.session_state.choice.section_name}”…"):
@@ -106,7 +108,7 @@ if "content" not in st.session_state or st.session_state.content is None:
             student_params["ongoing_concept"],
             st.session_state.choice
         )
-
+time.sleep(1)  # Give a moment for the spinner to show
 # 6) Display
 section_name = st.session_state.choice.section_name
 st.markdown(f"### Next Section: **{section_name}**")
