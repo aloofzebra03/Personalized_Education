@@ -13,7 +13,7 @@ os.environ["GOOGLE_API_KEY"]     = config.GOOGLE_API_KEY
 def get_embedder():
     print("Building Gemini embedder...")
     embeddings = GoogleGenerativeAIEmbeddings(
-        model="models/embedding-001",  # <- NO "models/" prefix
+        model="embedding-001",  # <- NO "models/" prefix
         google_api_key=st.secrets['GOOGLE_API_KEY'] # <- explicit auth
     )
     # sanity check
