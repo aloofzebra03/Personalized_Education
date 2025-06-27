@@ -16,7 +16,7 @@ def run_one(ongoing_concept: str, section_params: NextSectionChoice):
         combined_text.append(f"# Page: {d.metadata['page_label']}\n{d.page_content}")
     full_doc = "\n---\n".join(combined_text)
     filtered_text = filter_relevant_section(ongoing_concept, section_params.section_name, full_doc)
-    time.sleep(5)  # Give a moment for the spinner to show
+    # time.sleep(5)  # Give a moment for the spinner to show
     print(filtered_text)
     prompt = build_prompt(ongoing_concept, section_params, filtered_text)
     llm    = get_llm()
