@@ -64,7 +64,7 @@ def generate_next_section(params: dict) -> NextSectionChoice:
 
 # Streamlit app setup
 st.set_page_config(page_title="Adaptive Tutor", layout="centered")
-st.title("Personalized Next-Section Tutor")
+st.title("GT for Personalized Next-Section Tutor")
 
 init_vector_store()
 
@@ -135,7 +135,7 @@ if selected is not None:
             )
 
     section_name = st.session_state.choice.section_name
-    st.markdown(f"### Next Section: **{section_name}**")
+    st.markdown(f"### Ground Truth for Section: **{section_name}**")
     st.write(st.session_state.content)
 
     # Next button
