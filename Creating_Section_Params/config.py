@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-MODEL_NAME     = "gemini-2.5-flash"
+MODEL_NAME     = "gemini-2.0-flash"
 import streamlit as st
 
 GOOGLE_API_KEY = st.secrets.get("GOOGLE_API_KEY")
