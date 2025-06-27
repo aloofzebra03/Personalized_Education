@@ -1,11 +1,8 @@
 from pathlib import Path
 import os
-from dotenv import load_dotenv
 import streamlit as st
 
-GOOGLE_API_KEY = st.secrets.get("GOOGLE_API_KEY")
-
-load_dotenv()
+GOOGLE_API_KEY = st.secrets.get("GOOGLE_API_KEY_1")
 
 NUM_PROFILES = 50
 # MODEL_NAME = "mistralai/Mistral-7B-Instruct-v0.1"
@@ -15,6 +12,6 @@ NUM_PROFILES = 50
 # MODEL_NAME = 'HuggingFaceH4/zephyr-7b-beta'
 MODEL_NAME = 'gemini-2.0-flash'
 
-OUTPUT_CSV = Path("Creating_Student_Params/output/langchain_student_params_50_streamlit_testing.csv")
+OUTPUT_CSV = Path("Creating_Student_Params_From_Json/output/student_params_from_json.csv")
 HF_API_TOKEN = os.getenv("HF_API_TOKEN")
 # GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")

@@ -100,7 +100,7 @@ if "choice" not in st.session_state or st.session_state.choice is None:
     with st.spinner("Determining best next section…"):
         st.session_state.choice = generate_next_section(student_params)
 
-time.sleep(5)  # Give a moment for the spinner to show
+# time.sleep(5)  # Give a moment for the spinner to show
 # 5) Auto-fetch the section text if missing
 if "content" not in st.session_state or st.session_state.content is None:
     with st.spinner(f"Generating “{st.session_state.choice.section_name}”…"):
@@ -108,7 +108,7 @@ if "content" not in st.session_state or st.session_state.content is None:
             student_params["ongoing_concept"],
             st.session_state.choice
         )
-time.sleep(5)  # Give a moment for the spinner to show
+# time.sleep(5)  # Give a moment for the spinner to show
 # 6) Display
 section_name = st.session_state.choice.section_name
 st.markdown(f"### Next Section: **{section_name}**")

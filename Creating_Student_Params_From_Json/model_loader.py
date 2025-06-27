@@ -1,7 +1,8 @@
 from langchain_google_genai import ChatGoogleGenerativeAI
-from config import GOOGLE_API_KEY, MODEL_NAME
+from Creating_Student_Params_From_Json.config import GOOGLE_API_KEY, MODEL_NAME
 
 def load_llm():
+    print(GOOGLE_API_KEY)
     return ChatGoogleGenerativeAI(
         model=MODEL_NAME,
         api_key=GOOGLE_API_KEY,

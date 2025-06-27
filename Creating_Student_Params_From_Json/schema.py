@@ -17,6 +17,7 @@ ALLOWED_KG_NODES = [
 
 class StudentParameters(BaseModel):
     # Cognitive & Academic Profile
+    Roll_No: int = Field(..., description="Unique student identifier given in the prompt itsef")
     conceptual_clarity_level: int = Field(
         ..., ge=1, le=5,
         description="1 (very low clarity) to 5 (very high clarity)"

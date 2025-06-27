@@ -1,6 +1,6 @@
-from model_loader import load_llm
-from prompt_builder import prompt, parser
-from schema import StudentParameters
+from Creating_Student_Params_From_Json.model_loader import load_llm
+from Creating_Student_Params_From_Json.prompt_builder import prompt, parser
+from Creating_Student_Params_From_Json.schema import StudentParameters
 import re, json
 
 llm = load_llm()
@@ -20,9 +20,9 @@ def extract_and_parse(raw: str):
     # Parse via Pydantic
     return [parser.parse(json.dumps(item)) for item in items]
 
-def generate_profile(student_details: dict):
+def generate_profile(student_details: dict,roll_no: int):
     student_json_str = json.dumps(student_details, indent=2)
-    response = chain.invoke({"student_json": student_json_str})
+    response = chain.invoke({"student_json": student_json_str,"roll_no": roll_no})
     raw = getattr(response, "content", response)
     try:
         profiles = extract_and_parse(raw)

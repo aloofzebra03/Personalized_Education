@@ -4,15 +4,19 @@ import pandas as pd
 from config import OUTPUT_CSV
 from generator import generate_profile
 
-GITHUB_JSON_URL = "https://raw.githubusercontent.com/your-org/your-repo/main/student.json"
+GITHUB_JSON_URL = "https://raw.githubusercontent.com/markkevins109/student_grades/refs/heads/main/results/session-mcbve0de-ijku65q7.json"
 POLL_INTERVAL_SEC = 5
 
 def download_student_json(url: str) -> dict:
     while True:
         try:
             resp = requests.get(url)
+            print("Status:", resp.status_code)
+            print("Content-Type:", resp.headers.get("Content-Type"))
+            print("Body preview:\n", resp.text[:200])
             if resp.status_code == 200:
                 return resp.json()
+               
             else:
                 print(f"Waiting for JSON file (status {resp.status_code})…")
         except Exception as e:
