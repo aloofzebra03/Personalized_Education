@@ -22,6 +22,8 @@ def build_filter_prompt(ongoing_concept: str,
         - Return only the excerpt in paragraph form but ensure you include all relevant text.
         - Incase the document does not contain relevant information for the ongoing concept
         and section_name, return an empty string.
+        - STRICTLY Don't include any additional commentary or explanations from your end.
+        - Ensure that the output is related to the ongoing concept and section name only
         '''.strip()
 
     prompt = PromptTemplate(
