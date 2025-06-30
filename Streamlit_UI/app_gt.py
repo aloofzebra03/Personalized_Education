@@ -151,6 +151,7 @@ if selected is not None:
             df2.at[selected, "knowledge_graph_nodes_covered"] = json.dumps(covered)
             df2.at[selected, "ongoing_concept"] = new_concept
             df2.at[selected, "last_section"] = json.dumps([])
+            st.session_state.prev_last_section = []
             st.success(f"{old_concept} completed. Moving on to next concept: {new_concept}")
         else:
             secs = st.session_state.prev_last_section.copy()

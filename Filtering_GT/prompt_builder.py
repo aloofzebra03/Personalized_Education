@@ -1,36 +1,22 @@
-from langchain.prompts import PromptTemplate
+from langchain.prompts import ChatPromptTemplate
 
-def build_filter_prompt(ongoing_concept: str,
-                        section_name,
-                        document_full_text: str) -> str:
-    template = '''
-        You are an AI assistant tasked with extracting the most relevant
-        excerpt from a technical document.
+def build_filter_prompt(ongoing_concept: str, section_name: str, document_full_text: str) -> str:
+    chat_prompt = ChatPromptTemplate.from_messages([
+        # System sets the overall behavior
+        ("system", "You are an AI assistant that extracts *exact* excerpts from a document based on a user’s query."),
+        # User provides the actual query + instructions
+        ("user", 
+         "Ongoing Concept: {ongoing_concept}\n"
+         "Section Name: {section_name}\n\n"
+         "Full Document Text:\n"
+         "{document_full_text}\n\n"
+         "Instructions:\n"
+         "- Return *only* the excerpt(s) that directly address the ongoing concept and section name.\n"
+         "- If nothing is relevant, reply with exactly: `No relevant excerpt found.`"
+         "Answer should be in paragraph form")
+    ])
 
-        Ongoing Concept:
-        {ongoing_concept}
-
-        Section Name:
-        {section_name}
-
-        Full Document Text:
-        {document_full_text}
-
-        Instructions:
-        - Identify the portion of the document that best matches the ongoing concept
-        and the provided section parameters.
-        - Return only the excerpt in paragraph form but ensure you include all relevant text.
-        - Incase the document does not contain relevant information for the ongoing concept
-        and section_name, return an empty string.
-        - STRICTLY Don't include any additional commentary or explanations from your end.
-        - Ensure that the output is related to the ongoing concept and section name only
-        '''.strip()
-
-    prompt = PromptTemplate(
-        input_variables=["ongoing_concept", "section_name", "document_full_text"],
-        template=template
-    )
-    return prompt.format(
+    return chat_prompt.format(
         ongoing_concept=ongoing_concept,
         section_name=section_name,
         document_full_text=document_full_text
