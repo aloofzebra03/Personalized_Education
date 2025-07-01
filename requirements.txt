@@ -1,6 +1,7 @@
 Brotli
 Deprecated
 GitPython
+gTTS
 Jinja2
 MarkupSafe
 PyJWT
