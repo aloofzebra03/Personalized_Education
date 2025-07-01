@@ -1,5 +1,4 @@
 Brotli
-base64
 Deprecated
 GitPython
 Jinja2
