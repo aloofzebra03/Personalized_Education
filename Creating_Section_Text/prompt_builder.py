@@ -20,7 +20,7 @@ Note: The section_name given to you in the section parameters is the name of the
 Also ensure that you give only the section content in the output and nothing else.
 Be concise and clear in your response, focusing on the key points relevant to the ongoing concept.
 In case the document excerpts are an empty string or gibberish then completely ignore and generate content for {params} from scratch.
-Also Remember that the student you are teaching is of kannada origin and hence the content should be in Kannada language.Use Kannada script and not English script.
+Strict-Instruction: Also Remember that the student you are teaching is of kannada origin and hence the content should be in Kannada language.Use Kannada script and not English script.
 """
 
 def build_prompt(ongoing_concept: str, section_params: NextSectionChoice, docs: list):
