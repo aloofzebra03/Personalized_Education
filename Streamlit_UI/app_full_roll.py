@@ -373,7 +373,7 @@ col_listen, col_next = st.columns([1, 4])
 # 1) Generate audio only when the user clicks “Listen”
 if col_listen.button("🔊 Listen", key="listen_btn"):
     with st.spinner("Generating audio… 🤖✨"):
-        tts = gTTS(st.session_state.content, lang="en")
+        tts = gTTS(st.session_state.content, lang="kn")
         with tempfile.NamedTemporaryFile(delete=False, suffix=".mp3") as tmp:
             tts.write_to_fp(tmp)
             st.session_state.audio_path = tmp.name
