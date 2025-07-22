@@ -172,7 +172,7 @@ def mascot_says(text: str):
 
 from Creating_Section_Params.schema import NextSectionChoice, ALLOWED_KG_NODES
 from Creating_Section_Text.pipeline import ingest_and_build_store, run_one
-from Creating_Student_Params_From_Json.pipeline import run_profile_generation_pipeline
+from Creating_specific_student_params.pipeline import run_profile_generation_pipeline
 
 STUDENT_CSV = "Streamlit_UI/data/langchain_student_params_50_streamlit_testing_with_rollnos.csv"
 
