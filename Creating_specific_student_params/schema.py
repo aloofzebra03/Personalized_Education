@@ -55,16 +55,16 @@ class StudentParameters(BaseModel):
         ..., ge=1, le=14,
         description="Average days between revision sessions (1–14)"
     )
-    method_of_revision: List[Literal[
-        'active_recall',
-        'spaced_repetition',
-        'flashcards',
-        'practice_tests',
-        'summarization',
-        'group_study',
-        'mnemonics'
-    ]] = Field(..., min_items=1,
-        description="Revision methods used by the student; choose one or more")
+    # method_of_revision: List[Literal[
+    #     'active_recall',
+    #     'spaced_repetition',
+    #     'flashcards',
+    #     'practice_tests',
+    #     'summarization',
+    #     'group_study',
+    #     'mnemonics'
+    # ]] = Field(..., min_items=1,
+    #     description="Revision methods used by the student; choose one or more")
     question_asking_nature: int = Field(
         ..., ge=1, le=3,
         description="1 (rarely asks), 2 (asks when stuck), 3 (frequently asks)"

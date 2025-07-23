@@ -1,6 +1,6 @@
 from langchain.prompts import PromptTemplate
 from langchain.output_parsers import PydanticOutputParser
-from Creating_Student_Params_From_Json.schema import StudentParameters
+from Creating_specific_student_params.schema import StudentParameters
 
 # Initialize a parser based on our Pydantic schema
 parser = PydanticOutputParser(pydantic_object=StudentParameters)

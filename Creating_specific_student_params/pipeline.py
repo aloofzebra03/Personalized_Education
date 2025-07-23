@@ -3,7 +3,7 @@ import requests
 import os
 import csv
 
-from Creating_Student_Params_From_Json.generator import generate_profile
+from Creating_specific_student_params.generator import generate_profile
 
 def run_profile_generation_pipeline(
     roll_no: str,

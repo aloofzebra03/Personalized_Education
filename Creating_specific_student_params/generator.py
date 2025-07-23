@@ -1,6 +1,6 @@
-from Creating_Student_Params_From_Json.model_loader import load_llm
-from Creating_Student_Params_From_Json.prompt_builder import prompt, parser
-from Creating_Student_Params_From_Json.schema import StudentParameters
+from Creating_specific_student_params.model_loader import load_llm
+from Creating_specific_student_params.prompt_builder import prompt, parser
+from Creating_specific_student_params.schema import StudentParameters
 import re, json
 
 llm = load_llm()
