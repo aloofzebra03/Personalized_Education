@@ -35,6 +35,7 @@ charset-normalizer
 chromadb
 click
 colorama
+chromadb
 coloredlogs
 comm
 cryptography
