@@ -32,7 +32,6 @@ cachetools
 certifi
 cffi
 charset-normalizer
-chromadb
 click
 colorama
 chromadb
